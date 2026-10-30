@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@name='so_total_summary']" position="after">
+            <p class="text-end lh-sm" name="amount_total_words_fr" t-if="doc.amount_total_words_fr">
+                Amount in words: <br/>
+                <small class="text-muted"><span t-field="doc.amount_total_words_fr">Mille francs CFA</span></small>
+            </p>
+        </xpath>
+    </template>
+</odoo>
