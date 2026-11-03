@@ -52,7 +52,7 @@ class TestAmountToTextFr(TestSaleCommon):
                 "product_id": self.company_data["product_order_no"].id,
                 "product_uom_qty": 1,
                 "price_unit": 1250000,
-                "tax_ids": False,
+                "tax_id": False,
             })],
         })
         self.assertEqual(order.amount_total_words_fr, "Un million deux cent cinquante mille francs CFA")

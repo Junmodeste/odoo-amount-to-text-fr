@@ -1,6 +1,6 @@
 # Odoo Amount to Text (French)
 
-[![Odoo 19](https://img.shields.io/badge/Odoo-19.0-714B67)](https://www.odoo.com)
+[![Odoo 18](https://img.shields.io/badge/Odoo-18.0-714B67)](https://www.odoo.com)
 [![tests](https://github.com/Junmodeste/odoo-amount-to-text-fr/actions/workflows/tests.yml/badge.svg)](https://github.com/Junmodeste/odoo-amount-to-text-fr/actions/workflows/tests.yml)
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL--3-blue.svg)](LICENSE)
 
@@ -15,8 +15,8 @@ Le franc CFA (XOF, XAF) s'écrit sans centimes (« Un million deux cent cinquant
 
 ### Prérequis
 
-- Odoo 19 (Community ou Enterprise), modules `account` et `sale`
-- Bibliothèque Python `num2words` (déjà présente dans l'image Docker officielle `odoo:19`)
+- Odoo 18 (Community ou Enterprise), modules `account` et `sale`
+- Bibliothèque Python `num2words` (déjà présente dans l'image Docker officielle `odoo:18`)
 
 ### Installation
 
@@ -28,7 +28,7 @@ Les libellés des devises (hors franc CFA) se modifient dans *Comptabilité > Co
 
 ### Version supportée
 
-Odoo **19.0** uniquement. Tests automatisés (GitHub Actions) sur Odoo 19 Community (image `odoo:19`) + PostgreSQL 16, à chaque push.
+Odoo **18.0** uniquement. Tests automatisés (GitHub Actions) sur Odoo 18 Community (image `odoo:18`) + PostgreSQL 16, à chaque push.
 
 ### Licence
 
@@ -47,8 +47,8 @@ CFA franc (XOF, XAF) is written without cents ("Un million deux cent cinquante m
 
 ### Requirements
 
-- Odoo 19 (Community or Enterprise), `account` and `sale` modules
-- Python library `num2words` (already shipped in the official `odoo:19` Docker image)
+- Odoo 18 (Community or Enterprise), `account` and `sale` modules
+- Python library `num2words` (already shipped in the official `odoo:18` Docker image)
 
 ### Installation
 
@@ -60,7 +60,7 @@ Currency labels (except CFA franc) can be edited in *Accounting > Configuration 
 
 ### Supported version
 
-Odoo **19.0** only. Automated tests (GitHub Actions) run on Odoo 19 Community (`odoo:19` image) + PostgreSQL 16 on every push.
+Odoo **18.0** only. Automated tests (GitHub Actions) run on Odoo 18 Community (`odoo:18` image) + PostgreSQL 16 on every push.
 
 ### License
 
