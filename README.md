@@ -28,7 +28,7 @@ Les libellés des devises (hors franc CFA) se modifient dans *Comptabilité > Co
 
 ### Versions supportées
 
-Une branche par version d'Odoo : [`19.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/19.0) (cette branche), [`18.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/18.0). Tests automatisés (GitHub Actions) sur Odoo 19 Community (image `odoo:19`) + PostgreSQL 16, à chaque push.
+Une branche par version d'Odoo : [`19.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/19.0) (cette branche), [`18.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/18.0), [`17.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/17.0). Tests automatisés (GitHub Actions) sur Odoo 19 Community (image `odoo:19`) + PostgreSQL 16, à chaque push.
 
 ### Licence
 
@@ -60,7 +60,7 @@ Currency labels (except CFA franc) can be edited in *Accounting > Configuration 
 
 ### Supported versions
 
-One branch per Odoo version: [`19.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/19.0) (this branch), [`18.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/18.0). Automated tests (GitHub Actions) run on Odoo 19 Community (`odoo:19` image) + PostgreSQL 16 on every push.
+One branch per Odoo version: [`19.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/19.0) (this branch), [`18.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/18.0), [`17.0`](https://github.com/Junmodeste/odoo-amount-to-text-fr/tree/17.0). Automated tests (GitHub Actions) run on Odoo 19 Community (`odoo:19` image) + PostgreSQL 16 on every push.
 
 ### License
 
