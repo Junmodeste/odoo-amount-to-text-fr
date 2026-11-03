@@ -1,7 +1,7 @@
 {
     "name": "Amount to Text (French)",
     "summary": "Print the total amount in French words on invoices and quotations",
-    "version": "18.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Accounting/Localizations",
     "license": "LGPL-3",
     "author": "Koffi Modeste Junior",
