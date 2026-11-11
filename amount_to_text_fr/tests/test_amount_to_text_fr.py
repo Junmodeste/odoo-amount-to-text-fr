@@ -58,3 +58,11 @@ class TestAmountToTextFr(TestSaleCommon):
         self.assertEqual(order.amount_total_words_fr, "Un million deux cent cinquante mille francs CFA")
         html, _type = self.env["ir.actions.report"]._render_qweb_html("sale.action_report_saleorder", order.ids)
         self.assertIn("Un million deux cent cinquante mille francs CFA", html.decode())
+
+    def test_payment_receipt_report(self):
+        payment = self.init_payment(25000, post=True, currency=self.xof)
+        self.assertEqual(payment.amount_words_fr, "Vingt-cinq mille francs CFA")
+        html, _type = self.env["ir.actions.report"]._render_qweb_html(
+            "account.action_report_payment_receipt", payment.ids
+        )
+        self.assertIn("Vingt-cinq mille francs CFA", html.decode())

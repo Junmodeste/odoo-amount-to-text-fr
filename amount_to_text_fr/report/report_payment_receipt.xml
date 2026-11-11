@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_payment_receipt_document" inherit_id="account.report_payment_receipt_document">
+        <!-- New row under the one holding "Payment Amount". -->
+        <xpath expr="//span[@t-field='o.amount']/../.." position="after">
+            <div class="row" name="amount_words_fr" t-if="o.amount_words_fr">
+                <div class="col-12">
+                    Amount in words: <span t-field="o.amount_words_fr">Mille francs CFA</span>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
