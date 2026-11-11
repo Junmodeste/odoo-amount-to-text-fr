@@ -20,5 +20,6 @@ jobs:
           # The image entrypoint reads the database settings from HOST/USER/PASSWORD.
           docker run --rm --network odoo -e HOST=db -e USER=odoo -e PASSWORD=odoo \
             -v "$PWD:/mnt/extra-addons:ro" odoo:19 \
-            odoo -d test -i amount_to_text_fr --test-enable --test-tags=/amount_to_text_fr --stop-after-init 2>&1 | tee odoo.log
+            odoo -d test -i amount_to_text_fr,amount_to_text_fr_purchase --test-enable \
+            --test-tags=/amount_to_text_fr,/amount_to_text_fr_purchase --stop-after-init 2>&1 | tee odoo.log
           grep -E "0 failed, 0 error\(s\) of [1-9][0-9]* tests" odoo.log
