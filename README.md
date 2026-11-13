@@ -24,6 +24,8 @@ Le franc CFA (XOF, XAF) s'écrit sans centimes (« Un million deux cent cinquant
 2. Redémarrez Odoo et mettez à jour la liste des applications.
 3. Installez **Amount to Text (French)** : le montant en lettres apparaît sur les factures, devis et reçus de paiement imprimés.
 
+Bons de commande fournisseur : le module complémentaire `amount_to_text_fr_purchase` (même dépôt) ajoute le montant en lettres sous le total du bon de commande imprimé. Il s'installe tout seul quand `amount_to_text_fr` et `purchase` sont installés ; copiez simplement son dossier à côté de `amount_to_text_fr`.
+
 Les libellés des devises (hors franc CFA) se modifient dans *Comptabilité > Configuration > Devises* (champs « Unité » et « Sous-unité »).
 
 ### Versions supportées
@@ -55,6 +57,8 @@ CFA franc (XOF, XAF) is written without cents ("Un million deux cent cinquante m
 1. Copy the `amount_to_text_fr` folder into your addons path.
 2. Restart Odoo and update the apps list.
 3. Install **Amount to Text (French)**: the amount in words is printed on invoices, quotations and payment receipts.
+
+Purchase orders: the companion module `amount_to_text_fr_purchase` (same repository) prints the amount in words below the total of printed purchase orders. It installs itself when `amount_to_text_fr` and `purchase` are installed; just copy its folder next to `amount_to_text_fr`.
 
 Currency labels (except CFA franc) can be edited in *Accounting > Configuration > Currencies* ("Unit" and "Subunit" fields).
 
