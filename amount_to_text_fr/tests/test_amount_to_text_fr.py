@@ -66,3 +66,19 @@ class TestAmountToTextFr(TestSaleCommon):
             "account.action_report_payment_receipt", payment.ids
         )
         self.assertIn("Vingt-cinq mille francs CFA", html.decode())
+
+    def test_french_labels(self):
+        # Load i18n/fr.po and print for a French-speaking partner.
+        self.env["res.lang"]._activate_lang("fr_FR")
+        self.env["ir.module.module"]._load_module_terms(["amount_to_text_fr"], ["fr_FR"])
+        self.partner_a.lang = "fr_FR"
+        invoice = self._create_invoice_one_line(
+            price_unit=1000, currency_id=self.xof.id, partner_id=self.partner_a.id, post=True
+        )
+        html, _type = self.env["ir.actions.report"]._render_qweb_html("account.account_invoices", invoice.ids)
+        self.assertIn("Montant total en lettres :", html.decode())
+        payment = self.init_payment(25000, post=True, partner=self.partner_a, currency=self.xof)
+        html, _type = self.env["ir.actions.report"]._render_qweb_html(
+            "account.action_report_payment_receipt", payment.ids
+        )
+        self.assertIn("Montant en lettres :", html.decode())
